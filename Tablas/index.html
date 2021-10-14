@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <table rules="groups" style="border: 1px solid dodgerblue; border-collapse: collapse">
+        <caption>Horario de clase</caption>
+        <thead>
+            <tr style="border: 2px dotted crimson">
+                <th style="padding: 40pt; margin-top: 1px;">
+                    <span>Lunes</span>
+                </th>
+                <th>
+                    <span>Martes</span>
+                </th>
+                <th>
+                    <span>Miercoles</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"; style="text-align: center;"><span>1 - 2</span></td>
+                
+                <td rowspan="2"><span>3 - 6</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span>4</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+            </tr>
+            <td>
+                <span>7</span>
+            </td>
+            <td>
+                <span>8</span>
+            </td>
+            <td>
+                <table style="border: 10px solid springgreen;">
+                    <thead>
+                        <tr style="border: 1px dashed deeppink">
+                            <th>
+                                <span>8:00</span>
+                            </th>
+                            <th>
+                                <span>9:00</span>
+                            </th>
+                            <th>
+                                <span>10:00</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>1</span></td>
+                            <td><span>2</span></td>                         
+                            <td><span>3</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <span>16</span>
+                </td>
+                <td>
+                    <span>17</span>
+                </td>
+                <td>
+                    <span>18</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+
+</html>
