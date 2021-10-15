@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
+    <style>
+        .tabla{
+            border: 1px solid dodgerblue; 
+            border-collapse: collapse;
+        }
+
+        #tr-1{
+            border: 2px dotted crimson
+        }
+    </style>
 </head>
 <body>
-    <table rules="groups" style="border: 1px solid dodgerblue; border-collapse: collapse">
+    <table class="tabla" rules="groups" style="">
         <caption>Horario de clase</caption>
         <thead>
-            <tr style="border: 2px dotted crimson">
+            <tr id="tr-1" style="">
                 <th style="padding: 40pt; margin-top: 1px;">
                     <span>Lunes</span>
                 </th>
