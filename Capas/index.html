@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capas</title>
+</head>
+<body>
+    <div style="background: red;
+                width: 500px;
+                height: 200px;">
+        <span>Primera Capa</span>
+    </div>
+    <div style="background: blue;
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                top: 150px;
+                left: 250px;"><!--el absoluto se refiere a que es absoluta al contenido de la ventana entera-->
+        <span>Segunda Capa</span>
+    </div>
+    <div style="background: green;
+                width: 500px;
+                height: 200px;">
+        <span>Tercera Capa</span>
+        <div style="background: orange;
+                                width: 200px;
+                                height: 180px;
+                                position: relative;
+                                top: 20px;
+                                left: 20px;"><!--el relativo se refiere a que el objeto se sitúa en posición que le indico dentro del objeto, no respecto de la ventana-->
+            <span>Cuarta Capa</span>
+        </div>
+    </div>
+    <div style="position: fixed;
+                top: 2px;
+                right: 2px;">
+        <img src="OIP.jpg" alt="Imagen de anuncio">
+    </div>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    </br></br></br>
+    <div style="background: black;
+                width: 200px;
+                height: 100px;
+                margin: 0px auto;"><!--otra manera de centrar el div con margin es usando "margin-left: auto;" + "margin-right: auto;"-->
+        <span>Quinta Capa</span>
+    </div>
+    <div style="background: cornflowerblue;
+                width: 100px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;">
+        <span>Sexta Capa</span>
+    </div>
+</body>
+</html>
