@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script>
+        function pasarMayus(campo){
+            campo.value = campo.value
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 600px;
+                background: aliceblue;
+                margin: 0px auto;">
+        <h2>Formulario</h2>
+        <form action="registro.php"
+                method="get"><!--action="registro.php" es a donde se envía el formulario y guardar y tratar
+                get - se ve la url a donde se envía la info, es decir, normalmente se usa para formularios q no tiene info confidencial
+                post - se usa para cuando tenemos en el formularrio info confidencial-->
+                <table>
+                    <tr>
+                        <td><label for="Nombre">Nombre</label></td>
+                        <td><input type="text" name="Nombre" id="Nombre"
+                            placeholder="Introduzca el nombre"
+                            autofocus
+                            size="40"
+                            maxlength=""
+                            pattern="[A-Z](10)[0-9](2) required"></td><!--value lo q es hace es recuperar los datos que el usuario ya tenía introducidos
+                                                                            placeholder pone un texto que desaparece del campo cuando se introduce el texto
+                                                                        readonly permite q el usuario vea la info que ha puesto pero no puede editarlo, solo leer
+                                                                        id nos servirá más adelante para javascript
+                                                                        autofocus solo s epone en el primer campo
+                                                                        maxlength indica el nº max de caracteres q usuario puede poner
+                                                                        etiquet alabel se usa para poner en nombre del campo y tenemos q poner id del campo donde se escribe-->
+                    </tr>
+                    <tr>
+                        <td><span>Apellido</span></td>
+                        <td><input type="text" name="Apellido" onkeyup="pasarMayus"(this)
+                            readonly
+                            value=""
+                            onblur=""></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" name="pass" id="Password"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset"></td>
+                        <td><input type="submit" value="Enviar formulario"></td>
+                        <td><input type="button" name="boton" id="boton" value="Ocultar"
+                            onclick="document...."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pregunta">¿Mayor de edad?</label></td>
+                        <td><input type="radio" name="pregunta" id="pregunta" value="Sí" checked><span>Sí</span><!--checked sirve para marcar por defecto alguna opción-->
+                            <input type="radio" name="pregunta" id="pregunta" value="No"><span>No</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="aficiones">Aficiones</label>
+                        </td>
+                        <td><input type="checkbox" name="deporte" id="deporte" value="D"><span>Deporte</span></td>
+                        <td><input type="checkbox" name="cine" id="cine" value="C"><span>Cine</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="provincias" id="provincias">
+                                <optgroup label="Zona Centro">
+                                    <option value="41">Sevilla</option>
+                                    <option value="36">Córdoba</option>
+                                </optgroup>
+                                <option value="-1"><span>Seleccionar provincia</span></option>
+                                <option value="41" selected><span>Sevilla</span></option> <!--yo decido qué es lo que pongo en value, por ej, aqui es el codigo de provincia que yo le ponga
+                                selected por defecto me fija un valor en el desplegable-->
+                                <option value="36"><span>Córdoba</span></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fichero"><span>Seleccione una foto</span></label>
+                        </td>
+                        <td><input type="file" name="fichero" id="fichero"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="descripcion">Descripción</label>
+                        </td>
+                        <td><textarea name="descripcion" id="descripcion" rows="16" cols="50" maxlength="200"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="edad">Edad</label>
+                        </td>
+                        <td><input type="number" name="edad" id="edad" maxlength="5" step="9.5" max="60" min="10"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td><input type="email" name="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="url">Url</label>
+                        </td>
+                        <td><input type="url" name="url" id="url" required value="https://"></td>
+                        telefono movil
+                        searchs
+                    </tr>
+                    <tr>
+                        <td><label for="fechas">Fechas</label></td>
+                        <td><input type="date" name="fecha1" id="fecha1">
+                        <input type="datetime" name="fecha2" id="fecha2">
+                        <input type="datetime-local" name="fecha3" id="fecha3">
+                        <input type="time" name="fecha4" id="fecha4">
+                        <input type="month" name="fecha5" id="fecha5"></td>
+                    </tr>
+                </table>
+        </form>
+    </div>
+</body>
+</html>
