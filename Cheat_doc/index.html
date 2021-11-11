@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatDoc</title>
+</head>
+<body>
+    <!--PÁRRAFOS-->
+    <pre></pre> <!-- le da formato tal cual yo lo escriba, es de lo menos utilizado; demasiado básico,
+    por lo que habría que jugar con mucho style-->
+https://www.hazunaweb.com/curso-de-html/caracteres-especiales/ - web para caracteres especiales
+    <p></p> <!--principalmente se trabaja con los párrafos, aunque le añade espacios por arriba y por debajo,
+    por lo cual si quiero que el texto este más junto – aplicar style-->
+Nunca se pone el texto solo, siempre tiene que ir dentro de una etiqueta (p, h1, span, label…)
+<!--Encabezados - Headings: se ponen con--> <h1></h1> <h2></h2> <h3></h3> <h4></h4> <h5></h5> <h6></h6>
+    <blockquote></blockquote> <!-- hace una sangría  respecto al párrafo; dentro de blockquote puedo meter
+    un párrafo:--> <blockquote><p></p></blockquote>
+    <span></span> <!--engloba el texto para meterle style: “color (del texto); text-decoration: underlined…” así como botón para javascript-->
+    <hr/> <!--es una línea horizontal que podemos hacer más estrecha/gorda, cambiar color…-->
+    <br/> <!--salto de línea-->
+
+    <!--LISTAS-->
+    <!--Estructura de lista desordenada ul-->
+    <ul type="square/circle/disc">
+        Nombre_lista
+        <li>N1</li>
+        <li>N2</li>
+        <li>N3</li>
+        <li>N4</li>
+    </ul><!--con type - de html4 - definimos el puntito de los objetos de lista
+        o lo podemos poner con style="list-style-type: " que es lo que se usa en html5-->
+
+    <!--Estructura de lista ordenada ol-->
+    <ol>
+        <li>N1</li>
+        <li>N2</li>
+        <li>N3</li>
+        <li>N4</li>
+    </ol>
+    <!--se puede meter una lista dentro de la otra, por ej:-->
+    <ol>
+        <li>N1</li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </ol>
+
+    <!--Lista de definición dl-->
+    <dl>
+        <dt>objeto a definir</dt>
+        <dd>definicion</dd>
+        <dt>objeto a definir2</dt>
+        <dd>definicion2</dd>
+    </dl>
+
+
+    <!--ENLACES-->
+    <a href="www.enlace.com">TextoEnlace</a>  <!--es la etiqueta para poner un enlace, acompañada de un atributo
+        href="" se abre en la misma pestaña, o sea, no se abre una pestaña distinta si lo dejo así-->
+    <!--Enlace 1 para ir a otra web ajena: Estructura-->
+    <a href="http://www.enlace.com" 
+    target="_blank"
+    hreflang="es"
+    type="text/pdf">TextoEnlacePorEjGOOGLE</a><!--le añado 1) target="_blank" para que se abra en pestaña nueva;
+    2) hreflang="es"- es el idioma del enlace al que vamos;
+    3) type="text/pdf" define el tipo de elemento al que vamos-->
+
+    <!--Enlace 2 para ir a una pág de mi cód-->
+    <!--Esto se pone en la pág index principal:-->
+    <a href="webs/Pagina.html">ABRIR Pagina</a>
+    <!--Esto se pone en la Página.index a donde voy después de crearla para crear por ej boton para ir para atras; 
+        si hace falta la creo dentro de una carpeta nueva al mismo nivel que el index principal y llamar 
+        esta nueva carpeta "web":-->
+    <a href="../index.html">Volver</a>
+
+    <!--Enlace 3 para ir a una sección de mi cód-->
+    <!--en el punto web desde el que quiero ir a una sección determinada indico el enlace con referencia 
+    a la carpeta y pág seguido de id_sección con almohadilla y target si es en otra pág o simplemente
+    id con almohadilla si es en la misma pág-->
+    <a href="webs/Pagina.html#final" target="_blank">IR AL FINAL DE PAGINA</a>
+    <!--en la sección destino indico ref con el punto de anclaje o id-->
+    <a id="final"></a>
+    <!--si quiero que alguna flecha aparezca como imagen la pongo con etiqueta <img src="enlace-imagen">
+    dentro de la etiqueta <a> con su href=#; y no hace falta target si es dentro de la misma pág-->
+        <a href="webs/Pagina.html#final" target="_blank"><img src=""></a>
+
+    <!--IMAGENES-->
+    <img src="images/imagen.png"
+                alt="Texto de imagen"
+                style="width: ; height: ;" deseable no usar
+                usemap="letter" ismap="ismap"> <!--es el atributo principal; lo suyo es que 
+                    creemos una carpeta de imágenes-->
+    <map id="letter" name="letter">
+        <area shape="" coords="" href="www.enlace.com" target="_blank">
+        <!--Definir circle en coords: punto y radio – 
+        Definir rect en coords: 2 puntos – se ponen coordenadas con sus comas y también separadas por una 
+        coma; se  coge el punto de arriba izq y de abajo der
+        Definir poly en coords: míltiples puntos separados por comas
+        Por último, para unir coords de mapa con imagen, ponemos en la etiqueta de imagen los atributos 
+        usemap="letter" ismap="ismap"-->
+    </map>
+
+    <body style="background-image: url('images/image.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;"></body>
+    <!--en body con la etiqueta de style podemos poner un atributo de background-image o background-->
+<!--de forma alternativa al background de body anterior, podemos poner los atribubtos juntos:-->
+<body style="background: url(‘’) repeat-x center fixed;"></body>
+
+
+<!--TABLAS-->
+<table>
+    <thead>
+        <th>
+            <td><span></span></td>
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td><span></span></td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<!--DIV-->
+<div style="background: ;
+                width: 0px;
+                height: 0px;
+                position: ;
+                margin: ;
+                top: 0px;
+                float: left;
+                clear: both;>
+        <span></span>
+    </div>
+
+
+<!--FORMS-->
+<div style="width: 0px;
+            background: ;
+            margin: 0px auto;">
+    <h2>Nombre_formulario</h2>
+    <form action="registro.php"
+        method="get/post">
+        <table><!--Nombre/Ap-->
+            <tr>
+                <td><label for="Nom_apart"></label></td>
+                <td><input type="text/password/" name="Nom_apart" id="Nom_apart"></td>
+                <!--text - nombre, apellido; password - contras; radio - preguntas y resp 1 predeterm (value en resp);
+                checkbox - preguntas para check múltiple (values para cada opción, por ej, "D")-->
+            </tr>
+            <!--Contraseña-->
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="pass" id="Password"></td>
+            </tr>
+            <!--Preguntas para select 1 resp-->
+            <tr>
+                <td><label for="pregunta">¿?</label></td>
+                <td><input type="radio" name="pregunta" id="pregunta" value="Sí" checked><span>Sí</span>
+                    <input type="radio" name="pregunta" id="pregunta" value="No"><span>No</span>
+                </td>
+            </tr>
+            <!--Preg con múlt resp-->
+            <tr>
+                <td>
+                    <label for="aficiones">PregOAfirm</label>
+                </td>
+                <td><input type="checkbox" name="deporte" id="deporte" value="D"><span>Deporte</span></td>
+                <td><input type="checkbox" name="" id="" value=""><span></span></td>
+            </tr>
+            <!--Desplegable normal y grupal-->
+            <tr>
+                <td>
+                    <select name="provincias" id="provincias">
+                        <optgroup label="Zona Centro">
+                            <option value="41">Sevilla</option>
+                            <option value="36">Córdoba</option>
+                        </optgroup>
+                        <option value="-1"><span>Seleccionar provincia</span></option>
+                        <option value="41" selected><span>Sevilla</span></option>
+                        <option value=""><span></span></option>
+                    </select>
+                </td>
+            </tr>
+            <!--Subir archivo-->
+            <tr>
+                <td>
+                    <label for="fichero"><span>Seleccione un archivo</span></label>
+                </td>
+                <td><input type="file" name="fichero" id="fichero"></td>
+            </tr>
+            <!--Texto de campo-->
+            <tr>
+                <td>
+                    <label for="descripcion">Descripción</label>
+                </td>
+                <td><textarea name="descripcion" id="descripcion" rows="" cols="" maxlength="">algo</textarea></td>
+            </tr>
+            <!--Edad-->
+            <tr>
+                <td>
+                    <label for="edad">Edad</label>
+                </td>
+                <td><input type="number" name="edad" id="edad" maxlength="" step="" min="" max=""></td>
+            </tr>
+            <!--Email, url, search, tel-->
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" name="email" id="email" required>
+                    <input type="url" name="web" id="web" required value="http://">
+                    <input type="search" name="busqueda" id="busqueda" required>
+                    <input type="tel" name="telefono" id="telefono" required>
+                </td>
+            </tr>
+            <!--Fechas-->
+            <tr>
+                <td><label for="fechas">Fechas</label></td>
+                <td>
+                    <input type="date" name="fecha1" id="fecha1">
+                    <input type="datetime" name="fecha2" id="fecha2">
+                    <input type="datetime-local" name="fecha3" id="fecha3">
+                    <input type="time" name="fecha4" id="fecha4">
+                    <input type="month" name="fecha5" id="fecha5">
+                </td>
+            </tr>
+            <!--Botones-->
+            <tr>
+                <td><input type="reset" value="Borrar"></td>
+                <td><input type="submit" value="Enviar formulario"></td>
+                <td><input type="button" name="boton" id="boton" value="Ocultar"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<!--un input puede tener estos atributos:
+    - placeholder="Introduzca el nombre" - un texto que desaparece del campo cuando se introduce el texto
+    - autofocus - solo se pone en el primer campo para que nada más acceder a form se active pare rellenar
+    - size="40px" - tamaño en ancho de la celda
+    - maxlength="" - nº máx de caracteres a escribir
+    - pattern="[A-Z]{10}[0-9]{2}" - define el formato del texto que se introduce en la celda
+    - required - indica un campo obligatorio
+    - readonly - sólo permite vista del campo al usuario, no escribir
+    - value="" - recuperar los datos que el usuario ya tenía introducidos
+    - onkeyup="...(this)" & onblur="...(this)" - no entran
+    - value="" - indica los valores de las respuestas a las preguntas por ej
+    - checked - pone por defecto alguna opción de radio marcada, lo normal es ponerlo en la primera
+    - <select> en medio de un td para un desplegable/
+        dentro de ese <option>/<optgroup> para desplegar normal o con jerarquia
+    - selected - por defecto me fija un valor en el desplegable    -->
+</body>
+</html>
