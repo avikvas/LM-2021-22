@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing store Next | Work with us | Form</title>
+    <meta name="title" content="Clothing store Work with us Form">
+    <meta name="description" content="Please find here a fill-in form which you can use to send us your job request">
+    <meta name="keyword" content="clothes, clothing store, clothing shop, shopping, next">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Expires" content="0">
+    <meta name="language" content="EN">
+    <meta name="copyright" content="Next">
+    <meta name="author" content="VikV">
+    <meta name="revised" content="11/14/2021">
+    <meta name="summary" content="A long, long description of the clothing store">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Next Shop">
+    <meta name="twitter:description" content="Next shop description text like slogan, address, contact details, webpage url">
+    <meta name="twitter:creator" content="@next_shop">
+    <meta name="twitter:image" content="http://www.whatever.com/image.jpg">
+</head>
+<body>
+    <div style="width: 500px;
+            background: darkseagreen;
+            margin: 0px auto;">
+        <h2 style="text-align: center;">Work Request Form</h2>
+        <form action="registro.php" method="post">
+        <table style="padding: 10px;">
+            <tr><!--name-->
+                <td><label for="Name">NAME</label></td>
+                <td><input type="text" name="Name" id="Name" required autofocus></td>
+            </tr>
+            <tr><!--surname-->
+                <td><label for="Surname">SURNAME</label></td>
+                <td><input type="text" name="Surname" id="Surname" required></td>
+            </tr>
+            <tr><!--age-->
+                <td><label for="Age">AGE</label></td>
+                <td><input type="number" name="Age" id="Age" maxlength="3" step="1" min="16" max="100"></td>
+            </tr>
+            <tr><!--address-->
+                <td><label for="Address">ADDRESS</label></td>
+                <td><textarea name="Address" id="Address" rows="2" cols="40" maxlength="100"></textarea></td>
+            </tr>
+            <tr><!--town-->
+                <td><label for="Town">TOWN</label></td>
+                <td>
+                    <select name="Town" id="Town" required>
+                        <option value="-1" selected><span>Select your town</span></option>
+                        <option value="01"><span>Ashemark</span></option>
+                        <option value="02"><span>Banefort</span></option>
+                        <option value="03"><span>Castamere</span></option>
+                        <option value="04"><span>Casterly Rock</span></option>
+                        <option value="05"><span>Clegane Hall</span></option>
+                        <option value="06"><span>Cornfield</span></option>
+                        <option value="07"><span>Crag, The</span></option>
+                        <option value="08"><span>Crakehall</span></option>
+                        <option value="09"><span>Deep Den</span></option>
+                        <option value="10"><span>Faircastle</span></option>
+                        <option value="11"><span>Feastfires</span></option>
+                        <option value="12"><span>Golden Tooth</span></option>
+                        <option value="13"><span>Hornvale</span></option>
+                        <option value="14"><span>Kayce</span></option>
+                        <option value="15"><span>Lannisport</span></option>
+                        <option value="16"><span>Nunnis Deep</span></option>
+                        <option value="17"><span>Oxcross</span></option>
+                        <option value="18"><span>Pendric Hills</span></option>
+                        <option value="19"><span>Sarsfield</span></option>
+                        <option value="20"><span>Silverhill</span></option>
+                        <option value="21"><span>Tarbeck Hall</span></option>
+                    </select>
+                </td>
+            </tr>
+            <tr><!--phone-->
+                <td><label for="Phone">PHONE NO</label></td>
+                <td><input type="tel" name="Phone" id="Phone" maxlength="9" pattern="[0-9]{9}" required></td>
+            </tr>
+            <tr><!--whether worked before-->
+                <td><label for="WorkedBefore">HAVE YOU WORKED BEFORE?</label></td>
+                <td><input type="radio" name="WorkedBefore" id="WorkedBefore" value="Yes>1" checked><span>Yes, more than 1 year</span>
+                    <input type="radio" name="WorkedBefore" id="WorkedBefore" value="Yes<1"><span>Yes, less than 1 year</span>
+                    <input type="radio" name="WorkedBefore" id="WorkedBefore" value="No"><span>No</span>
+                </td>
+            </tr>
+            <tr><!--date last job-->
+                <td><label for="LastJobDate">DATE OF THE LAST JOB</label></td>
+                <td><input type="date" name="LastJobDate1" id="LastJobDate1" required>
+                    <input type="date" name="LastJobDate2" id="LastJobDate2" required>
+                </td>
+            </tr>
+            <tr><!--social network-->
+                <td><label for="SocialNetwork">SOCIAL NETWORKS</label></td>
+                <td><input type="checkbox" name="Twitter" id="Twitter" value="Tw"><span>Twitter</span>
+                    <input type="checkbox" name="Instagram" id="Instagram" value="In"><span>Instagram</span>
+                    <input type="checkbox" name="Facebook" id="Facebook" value="F"><span>Facebook</span>
+                    <input type="checkbox" name="Another" id="Another" value="An"><span>Another</span>
+                </td>
+            </tr>
+            <tr><!--social network link-->
+                <td><label for="SNLink">SOCIAL NETWORK LINK</label></td>
+                <td><input type="url" name="SNLink" id="SNLink" required value="https://"></td>
+            </tr>
+            <tr><!--job description-->
+                <td><label for="JobDescription">DESCRIBE THE POSITION</label></td>
+                <td><textarea name="JobDescription" id="JobDescription" rows="7" cols="40" maxlength="500" required></textarea></td>
+            </tr>
+            <tr><!--email-->
+                <td><label for="email">EMAIL</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr><!--send-->
+                <td colspan="2" style="text-align: center;"><input type="submit" value="Submit your request"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
