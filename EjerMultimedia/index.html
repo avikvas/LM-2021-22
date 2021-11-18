@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Vídeo</h1>
+    <video width="400" height="300"
+            controls
+            autoplay
+            loop
+            muted
+            preload="auto"
+            poster=""><!--controls da barra de controles; autoplay - pone a reproducir nada más cargar la pág;
+                        loop - ; muted - pone en silencio por defecto; preload - imagen predefinida de inicio;
+                        poster - lo que se muestra mientras se está intentando cargar-->
+        <source src="video/Fall-23881.ogv">
+        <source src="video/Fall - 23881.mp4">
+        <p>Navegador no soporta formato</p>
+    </video>
+    </br></br>
+    <h1>Audio</h1>
+    <audio controls
+            autoplay
+            loop
+            preload="auto">
+        <source src="video/town-10169.mp3">
+    </audio>
+    </br></br>
+    <h1>Vídeo de YouTube incrustado</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AtRs5gGNbxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </br></br>
+    <h1>Mapa</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.3369764585996!2d-6.00645020320327!3d37.38186239174734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c6ae9a171a1%3A0xfb6bb621dc08a753!2sIES%20Triana!5e0!3m2!1ses!2ses!4v1637065829082!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </br></br>
+    <h1>Incrustar una web dentro de otra</h1>
+    <iframe frameborder="1" src="dato.html" style="width: 300px; height: 300px;">
+    </iframe>
+    <object style="border: 1px solid black;" data="dato.html" type="text/html" width="300px"></object>
+</body>
+</html>

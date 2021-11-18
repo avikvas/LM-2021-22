@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font: bold 20px verdana, sans-serif;
+}
+h2 {
+    font: bold 16px verdana, sans-serif;
+}
+
+header, section, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+#container {
+    width: 960 px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#head {
+    background: lightgreen;
+    border: 1px solid darkgreen;
+    padding: 20px;
+}
+
+#menu {
+    background: darkseagreen;
+    padding: 5px 15px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+
+#main {
+    float: left;
+    width: 950px;
+    margin: 20px;
+}
+
+#column {
+    float: left;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: coral;
+}
+
+#foot {
+    clear: both;
+    text-align: center;
+    border-top: 2px solid darkcyan;
+}
+
+article {
+    background: darkorange;
+    border: 1px solid black;
+    padding: 26px;
+}
+
+article footer {
+    text-align: center;
+    font-size: small;
+}
