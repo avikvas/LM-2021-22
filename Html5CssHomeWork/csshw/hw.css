@@ -1,0 +1,237 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    background: lightgray;
+}
+
+h1 {
+    font: 20px verdana, sans-serif;
+    color: red;
+}
+
+h4 {
+    font: 10px verdana, sans-serif;
+    color: green;
+}
+
+header, section, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+#contenedor {
+    background: darkseagreen;
+    width: 960 px;
+    height: 800px;
+    margin: 0px auto;
+    text-align: left;
+    border: 2px solid black;
+}
+
+#head {
+    background: darkseagreen;
+    display: inline-block;
+}
+
+#head div {
+    background: darkseagreen;
+    float: right; clear: both;
+}
+
+#head h1, h4 {
+    background: darkseagreen;
+}
+
+#menu {
+    background: rgb(129, 207, 233);
+    border: 1px solid lightgray;
+    margin: 0px;    
+}
+
+#navli {
+    background: rgb(129, 207, 233);
+    margin: 0px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    background: rgb(129, 207, 233);
+    color: darkslateblue;
+    padding: 15px;
+    border-right: 1px solid lightgray;
+    margin: 0px;
+}
+
+section {
+    background: lemonchiffon;
+    width: 950px;
+    height: 644px;
+    margin: 0px;
+}
+
+article {
+    background: lemonchiffon;
+    margin-top: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+#h5 {
+    color: darkslateblue;
+    background: rgb(233, 153, 84);
+}
+
+h5 {
+    background: rgb(233, 153, 84);
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+h2 {
+    padding: 15px 0px 15px 0px;
+}
+
+#heartb, h2 {
+    color: darkslateblue;
+    background: rgb(223, 161, 107);
+    margin: 0px;
+}
+
+#entrada {
+    height: 250px;
+    background: rgb(238, 93, 25);
+    margin: 0px;
+    border-radius: 5px;
+}
+
+#cuerpoentrada {
+    padding: 15px 0px 15px 0px;
+}
+
+#cuerpoentrada, #cuerpoentrada span {
+    color: maroon;
+    background: rgb(223, 161, 107);
+    margin: 0px;
+}
+
+#seg {
+    color: darkslateblue;
+}
+
+footer {
+    background: rgb(224, 169, 120);
+    margin: 0px;
+    top: 0px;
+    color: maroon;
+}
+
+footer ul {
+    background: rgb(224, 169, 120);
+    margin: 0px;
+    padding: 5px;
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+    background: rgb(224, 169, 120);
+    margin: 0px;
+}
+
+#columnader {
+    float: right;
+    margin-top: -644px;
+    margin-right: 0px;
+    background: lemonchiffon;
+    padding: 20px;
+    width: 230px;
+    height: 604px;
+}
+
+#subcol {
+    margin: 0px;
+    top: 0px;
+    background: rgba(235, 195, 236, 0.904);
+}
+
+#aside_head1 {
+    background: rgb(250, 168, 250);
+    width: 230px;
+    color: rebeccapurple;
+    margin: 0px;
+    padding: 0px 162px 0px 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#aside_head2 {
+    background: rgb(250, 168, 250);
+    width: 230px;
+    color: rebeccapurple;
+    margin: 0px;
+    padding: 0px 67px 0px 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#aside_head3 {
+    background: rgb(250, 168, 250);
+    width: 230px;
+    color: rebeccapurple;
+    margin: 0px;
+    padding: 0px 57px 0px 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#aside_head span {
+    background: rgb(250, 168, 250);
+}
+
+#aside_gen {
+    background: rgba(235, 195, 236, 0.904);
+    margin: 0px;
+    border: 1px solid rebeccapurple;
+    border-radius: 0px 0px 3px 3px;
+    margin-bottom: 20px;
+}
+
+#aside_gen ul {
+    background: rgba(235, 195, 236, 0.904);
+}
+
+#aside_gen li {
+    display: inline-block;
+    list-style: none;
+    background: rgba(235, 195, 236, 0.904);
+    margin: 0px;
+    color: darkslateblue;
+}
+
+#aside_gen li span {
+    color: black;
+}
+
+#aside_gen span, b, h1 {
+    background: rgba(235, 195, 236, 0.904);
+    text-align: center;
+}
+
+#textimag {
+    color: rebeccapurple;
+}
+
+#aside_gen span {
+    font-size: small;
+}
+
+#jose {
+    text-align: right;
+}
+
+#aside_gen_img {
+    margin: 0px 40px 10px 40px;
+}
