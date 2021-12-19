@@ -1,0 +1,25 @@
+* {
+    font-family: 'Arial Narrow';
+}
+
+a[href*="http"] {
+    color: red;
+}
+
+#primero p {
+    color: blue;
+}
+
+#primero p em {
+    color: darkblue;
+    background: lightyellow;
+}
+
+span {
+    font-weight: bold;
+}
+
+.especial {
+    color: yellow;
+    background: black;
+}

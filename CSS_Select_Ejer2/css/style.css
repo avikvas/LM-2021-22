@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 0px auto;
+    text-align: center;
+    width: 900px;
+    position: relative;
+}
+
+img {
+    alt: var(Imagen de sol);
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1024px) {
+    div, img {
+        border: 2px solid red;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 800px) {
+    div, img {
+        background: darkkhaki;
+    }
+}
+
+@media only screen and (max-width: 799px) and (min-width: 200px) {
+    div {
+        left: 0px;
+    }
+}

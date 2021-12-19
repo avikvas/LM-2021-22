@@ -1,0 +1,39 @@
+* {
+    margin: 0px auto;
+    width: 800px;
+    height: 50px;
+}
+
+body > div {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+div > h2 {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background: #bbb5b5;
+    display: flex;
+}
+
+.enlace {
+    background: #bbb5b5;
+    width: 15%;
+    height: auto;
+    margin: 0px;
+    color: darkslategrey;
+    text-align: center;
+    padding-top: 12px;
+    align-items: center;
+}
+
+.activo {
+    background: black;
+    color: whitesmoke;
+}

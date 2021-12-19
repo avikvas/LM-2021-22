@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+#container {
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header > h3  {
+    background: rgb(226, 225, 225);
+    padding: 15px;
+    color: darkslategrey;
+}
+
+#nombre {
+    color: blue;
+}
+
+#main {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h4#titulo {
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+#aficiones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aficion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    width: 31%;
+    border: 1px solid darkslategrey;
+    box-shadow: grey 1px 1px 2px 1px;
+    border-radius: 20px 0px 20px 0px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.aficion span {
+    font-size: 11px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#larga {
+    width: 97%;
+    background: #c1b8b4;
+}
+
+#blue {
+    background: #00d4ff;
+}
+
+#orange {
+    background: #f8b85e;
+}
+
+#red {
+    background: #ff8b5a;
+}
+
+.svg-inline--fa.fa-html5 {
+    background: none;
+    color: orange;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.svg-inline--fa.fa-css3-alt {
+    background: none;
+    color: #3e9ee0;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.svg-inline--fa.fa-js-square {
+    background: none;
+    color: #2dc14d;
+    width: 12%;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+.svg-inline--fa.fa-image {
+    width: 15%;
+    margin-top: 14px;
+    color: #cf5b13;
+}
+
+.svg-inline--fa.fa-paw {
+    width: 15%;
+    margin-top: 5px;
+    color: #dea0b7;
+}
+
+#grey {
+    background: #eae5e4;
+    border: 1px solid darkslategrey;
+    box-shadow: grey 1px 1px 2px 1px;
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#foot {
+    background: #17162b;
+    color: white;
+    font-size: 9px;
+}
+
+a[href$="www"] {
+    color: #0013d5;
+}
+
+iframe {
+    padding: 10px;
+}

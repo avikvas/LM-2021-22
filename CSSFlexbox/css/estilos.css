@@ -1,0 +1,43 @@
+.contenedor {
+   display: flex;
+    /*border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 240px;
+    align-items: center;
+    align-content: stretch;*/
+}
+/*- flex-direction indica el psocionamiento de las capas: row dispone en horizont, row-revese - horizont en sentido contrario
+column - en vertical, y column-reverse
+- flex-wrap - hace que se pongan todas las capas en filas <- aquí también cuenta el border, tener cuidado con ello
+- flex-flow sirve para unir en una fila flex-direction y flex-wrap
+- justify-content define alineacion (como se colocan las capas) a lo largo del eje x - pegado a derecha/izq/centro;
+así flex-start me las coloca al principio (izq), flex-end al final de eje x (der), center las coloca en el centro,
+space-between - con espacio en medio, space-around añade espacio en medio y a la der e izq, space-evenly coloca
+espacios igual en medio
+- align-items alinea capas en la capa superior; flex-start los pone arriba, flex-end las pone abajo de capa principal,
+center centra las capas dentro de la capa grande en el eje de la y
+- align-content alinea las capas en el eje y dentro de la capa grande; flex-start las pone arribe, flex-end las pone
+abajo, center las pone en el centro, space-around añade espacio alrededor en eje y, space-between añade espacio
+entre las capas colocándolas arriba y abajo, stretch hace que las capas ocupen todo el espacio en eje de las y
+*/
+
+.elemento {
+    width: 20%;
+    background: linear-gradient(to right, blue, grey);
+    flex-direction: row;
+    border: 1px solid black;
+    height: 40px;
+    color: white;
+    flex: 1 1 0;
+}
+
+.elemento:nth-child(4) {
+    flex-grow: 2;
+}
+
+/* - :nth-child(even) me coloca las capas impares primero; shrink situa cada una de las capas ocupando todo el
+espacio si es necesario
+*/
