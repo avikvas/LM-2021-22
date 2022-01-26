@@ -1,0 +1,36 @@
+$colortitulo: #dc3545;
+$colortexto: #fff;
+$colorfondo: #adb5bd;
+$font: 'Verdana';
+
+@mixin centrado {
+    margin: auto 0px;
+    text-align: center;
+}
+
+body {
+    @include centrado;
+    background: $colorfondo;
+}
+
+header {
+    color: $colortitulo;
+    font-family: $font;
+}
+
+ul {
+    font-family: $font;
+    display: inline-flex;
+}
+
+li {
+    color: $colortexto;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}

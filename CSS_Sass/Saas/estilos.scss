@@ -1,0 +1,140 @@
+/*
+*/
+//
+
+/*El comentario de una línea*/
+
+$primary-color: #65436f;
+$secondary-color: #51527f;
+$body-font: 'Roboto', sans-serif;
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $body-font;
+}
+
+/*bucle for; el valor de la variable se coloca con #*/
+
+@for $c from 1 to 4 {
+    .clase-#{$c} {
+        color: rgb($c*255/3, $c*255/3, $c*255/3);
+    }
+}
+
+/*mixin hace llamada a variable*/
+
+$debug: true default;
+
+@mixin debugmode {
+    @if $debug {
+        display: inline-block;
+    }
+    @else {
+        display: none;
+    }
+}
+
+.info {
+    @include debugmode;    
+}
+
+$columns: 4;
+$columns-width: 80px;
+
+/*while: mientras se cuple la condicion - está el bucle, cando ya no se cumple - sale del bucle*/
+/*variable centinela, $columns*/
+
+@while $columns > 0 {
+    .col-#{$columns} {
+        width: $columns-width;
+        left: $columns-width * ($columns - 1);
+    }
+
+    $columns: $columns - 1;
+}
+
+/*listas*/
+
+$social-links: facebook twitter linkedin reddit;
+
+.social-links {
+    @each $sl in $social-links {
+        .icon-#{$sl} {
+            background-image: url(*Images/#{$sl}.png);
+        }
+    }
+}
+
+/*mixin con parametros de centrado*/
+
+@mixin centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+div {
+    @include centrado;
+    background-color: $primary-color;
+}
+
+/*mixin con parametros de entrada*/
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.rectangulo {
+    @include size(100px, 80px);
+}
+
+.cubo {
+    @include size(50px, 40px);
+}
+
+/*funciones - functions; la diferencia con mixin es que function se usa para hacer oper matemat*/
+
+@function calcularPorcentaje($target-size,$parent-size) {
+    @return $target-size / $parent-size * 100%;
+}
+
+.micapa {
+    width: calcularPorcentaje(300px, 960px);
+}
+
+/*extender atributos de una clase dentro de otra, como el de centrado; pero aquí se juntan estilos
+sin duplicarse las lineas*/
+
+.display {
+    @include size(5em, 5em);
+    border: 5px solid $secondary-color;
+}
+
+.display-success {
+    @extend .display;
+    border-color: #c0c0c0;
+}
+
+/*anidaciones: meter un estilo dentro de otro;
+& es una pseudoclase que sustuye al anterior para no repetir*/
+
+ul {
+    list-style-type: none;
+    margin-top: 2em;
+    
+    li {
+        background-color: blue;
+
+        &:hover {
+            background-color: red;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}

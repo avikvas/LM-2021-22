@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../Sass/style.scss"
+	],
+	"sourcesContent": [
+		"$colortitulo: #dc3545;\r\n$colortexto: #fff;\r\n$colorfondo: #adb5bd;\r\n$font: 'Verdana';\r\n\r\n@mixin centrado {\r\n    margin: auto 0px;\r\n    text-align: center;\r\n}\r\n\r\nbody {\r\n    @include centrado;\r\n    background: $colorfondo;\r\n}\r\n\r\nheader {\r\n    color: $colortitulo;\r\n    font-family: $font;\r\n}\r\n\r\nul {\r\n    font-family: $font;\r\n    display: inline-flex;\r\n}\r\n\r\nli {\r\n    color: $colortexto;\r\n    list-style-type: none;\r\n    margin-left: 10px;\r\n    margin-right: 10px;\r\n\r\n    a {\r\n        color: black;\r\n        text-decoration: none;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAUA,AAAA,IAAI,CAAC;EAJD,MAAM,EAAE,QAAQ;EAChB,UAAU,EAAE,MAAM;EAKlB,UAAU,EAVD,OAAO;CAWnB;;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAhBK,OAAO;EAiBjB,WAAW,EAdR,SAAS;CAef;;;AAED,AAAA,EAAE,CAAC;EACC,WAAW,EAlBR,SAAS;EAmBZ,OAAO,EAAE,WAAW;CACvB;;;AAED,AAAA,EAAE,CAAC;EACC,KAAK,EAzBI,IAAI;EA0Bb,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CAMrB;;;AAVD,AAMI,EANF,CAME,CAAC,CAAC;EACE,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACxB"
+}

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*
+*/
+/*El comentario de una línea*/
+/* line 11, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+body {
+  background-color: #65436f;
+  color: #51527f;
+  font-family: "Roboto", sans-serif;
+}
+
+/*bucle for; el valor de la variable se coloca con #*/
+/* line 20, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.clase-1 {
+  color: #555555;
+}
+
+/* line 20, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.clase-2 {
+  color: #aaaaaa;
+}
+
+/* line 20, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.clase-3 {
+  color: white;
+}
+
+/*mixin hace llamada a variable*/
+/* line 38, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.info {
+  display: inline-block;
+}
+
+/*while: mientras se cuple la condicion - está el bucle, cando ya no se cumple - sale del bucle*/
+/*variable centinela, $columns*/
+/* line 49, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.col-4 {
+  width: 80px;
+  left: 240px;
+}
+
+/* line 49, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.col-3 {
+  width: 80px;
+  left: 160px;
+}
+
+/* line 49, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.col-2 {
+  width: 80px;
+  left: 80px;
+}
+
+/* line 49, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.col-1 {
+  width: 80px;
+  left: 0px;
+}
+
+/*listas*/
+/* line 63, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.social-links .icon-facebook {
+  background-image: url(*Images/facebook.png);
+}
+
+/* line 63, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.social-links .icon-twitter {
+  background-image: url(*Images/twitter.png);
+}
+
+/* line 63, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.social-links .icon-linkedin {
+  background-image: url(*Images/linkedin.png);
+}
+
+/* line 63, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.social-links .icon-reddit {
+  background-image: url(*Images/reddit.png);
+}
+
+/*mixin con parametros de centrado*/
+/* line 79, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #65436f;
+}
+
+/*mixin con parametros de entrada*/
+/* line 91, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.rectangulo {
+  width: 100px;
+  height: 80px;
+}
+
+/* line 95, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.cubo {
+  width: 50px;
+  height: 40px;
+}
+
+/*funciones - functions; la diferencia con mixin es que function se usa para hacer oper matemat*/
+/* line 105, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.micapa {
+  width: 31.25%;
+}
+
+/*extender atributos de una clase dentro de otra, como el de centrado; pero aquí se juntan estilos
+sin duplicarse las lineas*/
+/* line 112, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.display, .display-success {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #51527f;
+}
+
+/* line 117, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+.display-success {
+  border-color: #c0c0c0;
+}
+
+/*anidaciones: meter un estilo dentro de otro;
+& es una pseudoclase que sustuye al anterior para no repetir*/
+/* line 125, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+/* line 129, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 132, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+ul li:hover {
+  background-color: red;
+}
+
+/* line 136, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/CSS_Sass/Saas/estilos.scss */
+ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
