@@ -1,7 +1,7 @@
 $colortitulo: #dc3545;
 $colortexto: #fff;
 $colorfondo: #adb5bd;
-$font: 'Verdana';
+$font: 'Arial';
 
 @mixin centrado {
     margin: auto 0px;
@@ -23,11 +23,15 @@ ul {
     display: inline-flex;
 }
 
-li {
-    color: $colortexto;
+@mixin colocarLista {
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+li {
+    color: $colortexto;
+    @include colocarLista;
 
     a {
         color: black;

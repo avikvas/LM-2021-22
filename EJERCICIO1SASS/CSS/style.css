@@ -8,16 +8,16 @@ body {
 /* line 16, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
 header {
   color: #dc3545;
-  font-family: "Verdana";
+  font-family: "Arial";
 }
 
 /* line 21, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
 ul {
-  font-family: "Verdana";
+  font-family: "Arial";
   display: inline-flex;
 }
 
-/* line 26, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
+/* line 32, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
 li {
   color: #fff;
   list-style-type: none;
@@ -25,7 +25,7 @@ li {
   margin-right: 10px;
 }
 
-/* line 32, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
+/* line 36, ../../../Desktop/ASIR 2021-2022/4. LMSGI/Repository/LM_Vik_2021-22/EJERCICIO1SASS/Sass/style.scss */
 li a {
   color: black;
   text-decoration: none;
