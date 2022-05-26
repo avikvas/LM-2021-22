@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cursos</h1>
+    <form action="consulta.php" enctype="multipart/form-data" method="post">
+            <label for="curso">Elija el curso</label>
+            <select name="curso[]" id="curso" multiple>
+                <option value="PHP">PHP</option>
+                <option value="JAVA">JAVA</option>
+                <option value="NET">NET</option>
+            </select>
+        <input type="submit" value="Consultar">
+    </form>
+</body>
+</html>

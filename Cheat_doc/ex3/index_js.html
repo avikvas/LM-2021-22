@@ -1,0 +1,33 @@
+<!--se pone el enlace script en la head de html-->
+<script type="text/javascript" src="js/funciones.js"></script>
+
+<!--TABLA PARA FORMULARIO-->
+<!--ponemos label e input; en input elegir el type (text,number,radio,etc); crear input botón con funcion;
+poner resultado en un span aparte-->
+<h1>Formulario</h1>
+<form action="funciones.php" method="get" name="formul" onsubmit="return validarFormulario()">
+    <table>
+        <tr>
+            <td><label for="">ALGO</label></td>
+            <td><input type="text" name="" id="" autofocus></td>
+        </tr>
+        <tr>
+            <td><label for="">ALGO</label></td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for="">ALGO</label></td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" onclick="calcular()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultado"></span>
+        <span id="resultado2"></span>
+        <span id="resultado3"></span>
+    </div>
+</form>
+
+<!---->

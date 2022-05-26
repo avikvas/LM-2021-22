@@ -38,6 +38,7 @@ article {
 img {
     width: 100%;   
 }
+/*este es el que hace que las imagenes se vean en la pantalla completa, sin scroll a la der*/
 
 h1 {
     text-align: center;

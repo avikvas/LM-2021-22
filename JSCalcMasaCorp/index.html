@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Masa Corporal</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="peso">Introduzca su peso (kg)</label></td>
+            <td><input type="number" name="peso" id="peso" autofocus></td>
+        </tr>
+        <tr>
+            <td><label for="alto">Introduzca su altura (m)</label></td>
+            <td><input type="number" name="alto" id="alto"></td>
+        </tr>
+        <tr><td><input type="button" value="Calcular" onclick="calcIndice()"></td>
+        </tr>
+        <tr><td><span id="resultado"></span></td></tr>
+    </table>
+</body>
+</html>

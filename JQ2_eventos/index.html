@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //mouseover y mouseout definen lo que se hace al pasar por encima de un texto (div, span..)
+            //se puede añadir una class a una etiqueta (addClass) o quitarsela si la tiene (removeClass) con if y hasClass
+            $("div").mouseover(function () {
+                //this hace referencia al div sobre el que se pasa el raton y que mencione antes
+               $(this).addClass("colorfondo");
+               if ($(this).hasClass("clase")) {
+                   $(this).addClass("color");
+               }
+            });
+
+            $("div").mouseout(function () {
+                $(this).removeClass("colorfondo");
+                if ($(this).hasClass("clase")) {
+                    $(this).removeClass("color");
+                }
+            });
+
+            //con toggleClass se puede alternativamente poner/quitar una class de css, por ej
+            $("button.boton").click(function () {
+                //toggleClass quita la clase css si una capa la tiene o se la pone si no la tiene
+                $("div").toggleClass("ocultarMostrar");
+            });
+
+            //attr muestra un estilo o una caracteristica de un elemento; hace falta crear una variable que llame a ese elem
+            $("button.otroboton").click(function () {
+               var estilo = $("span").attr("style");
+               $("div#estiloSpan").text(estilo); 
+            });
+
+            //aqui podemos añadir un estilo nuevo o texto a algo que ya tenemos
+            $("button#esteboton").click(function () {
+               $("div#estiloSpan").css("width","300px"); 
+            });
+
+            //val 
+            $("button#mostrar").click(function () {
+               var seleccionado = $("input:radio:checked").val();
+               $("span#resultado").text(seleccionado);
+               $("#resultado2").val(seleccionado);
+               return false; 
+            });
+
+            //prop
+            $("button#activar").click(function () {
+               $("#resultado3").prop("disabled",false);
+               $("#resultado3").prop("placeholder","habilitado");
+               return false; 
+            });
+
+            //aquí prop sirve para recoger la propiedad del elemento (por ej, chequeado) y quitarselo
+            $("button#desmarcar").click(function () {
+               $("#chequeo").prop("checked",false);
+               return false; 
+            });
+
+            //insertar texto html desde input con boton jq en un div con html, que puede tener formato style, o text
+            $("input#insertar").click(function () {
+               //$("#capa1").html("<p style='font-weight: bold'>TEXTO</p>");
+               //prepend,append,before,after sirven para añadir texto en donde yo quiera
+               $("#capa1").prepend("<p>Al inicio</p>");
+               $("#capa1").append("<p>Al final</p>");
+               $("#capa1").before("<p>Antes</p>");
+               $("#capa1").after("<p>Después</p>");
+               $("#capa2").text("TEXTO");
+               $("capa2").replaceWith("OTRO TEXTO");
+            });
+
+            //
+            $("#checkMail").click(function () {
+               if ($(this).is(":checked") ) {
+                   $("#capaMail").append("<input type='email' id='myEmail'>");
+               } else {
+                   $("#myEmail").remove();
+               }
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        div {
+            width: 150px;
+            height: 35px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .colorfondo {
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .color {
+            color: red;
+        }
+
+        .ocultarMostrar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="boton">Mostrar / Ocultar </button>
+    <button class="otroboton">Ver estilo</button>
+    <button id="esteboton">Añadir estilo</button>
+    </br></br>
+    <div>Capa 1</div>
+    <div class="clase">Capa 2</div>
+    <div>Capa 3</div>
+</br></br>
+<span style="font-style: italic;">SPAN</span>
+</br></br>
+<div id="estiloSpan"></div>
+</br></br>
+<form>
+    <input type="radio" name="rad" value="Opción 1">Opción 1</input></br>
+    <input type="radio" name="rad" value="Opción 2">Opción 2</input></br>
+    <input type="radio" name="rad" value="Opción 3">Opción 3</input></br>
+    <input type="radio" name="rad" value="Opción 4">Opción 4</input></br>
+    <button id="mostrar">Mostrar</button>
+    <span id="resultado"></span><input type="text" id="resultado2">
+</br></br>
+    <button id="activar">Activar</button>
+    <input type="text" placeholder="Texto" disabled="disabled" id="resultado3">
+</br></br>
+    <input type="checkbox" id="chequeo" value="Sí" checked>Sí</br>
+    <button id="desmarcar">Desmarcar</button>
+</form>
+</br></br>
+<input type="button" value="Insertar" id="insertar">
+</br>
+<div id="capa1"></div>
+</br>
+<div id="capa2"></div>
+<div id="capaMail">
+    <input type="checkbox" id="checkMail">¿Email?
+</div>
+</body>
+</html>

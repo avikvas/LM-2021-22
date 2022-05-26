@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            <table style="background: cornflowerblue;">
+                <th><td colspan="2"><span>CALCULADORA</span></td></th>
+                <tr>
+                    <td colspan="4"><label for="num1">Nº 1</label></td>
+                    <td><input type="number" name="num1" id="num1" autofocus></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="num2">Nº 2</label></td>
+                    <td><input type="number" name="num2" id="num2"></td>
+                </tr>
+                <tr><td><input type="button" value="+" onclick="sumar()"></td>
+                    <td><input type="button" value="-" onclick="restar()"></td>
+                    <td><input type="button" value="*" onclick="multiplicar()"></td>
+                    <td><input type="button" value="/" onclick="dividir()"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="resultado">Resultado</label></td>
+                    <td rowspan="2"><input type="number" name="resultado" id="resultado"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </br></br></br></br>
+    <!--
+    <div>
+        <form>
+            <table style="background: darkseagreen;">
+                <th><td colspan="2">CALCULADORA</td></th>
+                <tr>
+                    <td colspan="4"><label for="num12">Nº 1</label></td>
+                    <td><input type="number" name="num12" id="num12"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="num22">Nº 2</label></td>
+                    <td><input type="number" name="num22" id="num22"></td>
+                </tr>
+                <tr><td><input type="button" value="+" id="sumar" onclick="calcular()"></td>
+                    <td><input type="button" value="-" id="restar" onclick="calcular()"></td>
+                    <td><input type="button" value="*" id="multiplicar" onclick="calcular()"></td>
+                    <td><input type="button" value="/" id="dividir" onclick="calcular()"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="resultado2">Resultado</label></td>
+                    <td rowspan="2"><input type="number" name="resultado2" id="resultado2"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    -->
+</br></br></br></br>
+<div>
+    <form>
+        <table style="background: darkseagreen;">
+            <th><td colspan="2">CALCULADORA</td></th>
+            <tr>
+                <td colspan="4"><label for="num12">Nº 1</label></td>
+                <td><input type="number" name="num12" id="num12"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="num22">Nº 2</label></td>
+                <td><input type="number" name="num22" id="num22"></td>
+            </tr>
+            <tr><td><input type="button" value="+" id="sumar" onclick="calcular('sumar')"></td>
+                <td><input type="button" value="-" id="restar" onclick="calcular('restar')"></td>
+                <td><input type="button" value="*" id="multiplicar" onclick="calcular('multiplicar')"></td>
+                <td><input type="button" value="/" id="dividir" onclick="calcular('dividir')"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="resultado2">Resultado</label></td>
+                <td rowspan="2"><input type="number" name="resultado2" id="resultado2"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

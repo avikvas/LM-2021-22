@@ -19,6 +19,6 @@ div p b.second::first-line {
     font-size: x-large;
 }
 
-a[href$="http"] {
+a[href*="http"] {
     text-decoration: none;
 }

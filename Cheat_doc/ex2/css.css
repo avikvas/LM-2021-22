@@ -1,0 +1,275 @@
+/*CSS & HTML5 initial*/
+/*- "*" significa que se aplica a todo el código;
+- Se puede mencionar cualquier etiqueta (h1, header, section, footer, aside, nav, article, body, p, span, li),
+id (#container) o class (.capa), siendo varias separadas por coma;
+- Para aplicar los estilos se pueden combinar en la misma línea tag, id  y class, para aplicar a un elemento 
+determinado; por ej., "#menu li" o "div p";
+- No olvidarse de ";";
+- indicar para todos los tags "display: block;"; y para "#menu li" - inline-block;
+- en los tags que van uno al lado del otro (por ej, section y aside) se pone "float: left;
+- en foot poner "clear: both;" para ponerlo abajo del todo.*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font: bold px verdana, sans-serif;
+}
+header, section, footer, aside, nav, article {
+    display: block;
+}
+body {
+    text-align: center;
+}
+#container {
+    width: px;
+    margin: 0px auto;
+    text-align: left;
+}
+#menu {
+    background: ;
+    padding: ;
+}
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: px;
+}
+#main {
+    float: left; width: ; margin: ;
+}
+article footer {
+    text-align: center;
+    font-size: small;
+}
+#foot {
+    clear: both;
+}
+
+
+/*SELECTORES: CSS_Selectores; css_ejer_8; css_select_ejer; css_select_ejer2; css_select_ejer3 sin terminar; 
+ task_3.4_css_selector_exam*/
+/*- puede contener cualquier etiqueta, id o class*/
+h1 {
+    background: darkslateblue;
+}
+.letraGrande {
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+#encima {
+    font-style: italic;
+}
+
+/*- para mencionar varios del mismo nivel se separan por comas*/
+a, p {
+    font-size: 18px;
+}
+
+/*- para mencionar todos los elementos que están dentro otro se separan 2 tags por un espacio o se escriben juntos 
+(si son tag y class/id)*/
+div a {
+    color: crimson;
+}
+div#capa1 {
+    background: cyan;
+}
+div#capa1, #encima {
+    font-weight: bolder;
+}
+
+/*- para mencionar a hijos de primer escalón dentro de un padre se pone ">", o sea, p primeros de un div*/
+div > p {
+    background-color: yellow;
+}
+
+/*estilos para elemento hijo inmediatamente primero después del padre capa, o sea, primer p del div*/
+div + p {
+    font-size: 80px;
+}
+
+/*~ selecciona los elementos que van depsues de un elemento especificado y están al mismo nivel, o sea, 
+los p que van fuera del div y están más abajo de él*/
+div ~ p {
+    background-color: yellow;
+  }
+
+/*pseudoclases; sintaxis: selector:pseudoclase {propiedad: valor;}*/
+/*:HOVER - se aplica cuando se le pasa raton encima; :visited - para enlace visitado; :active - para enlaces que 
+funcionan/seleccionado; :link - para enlace no visitado; :focus - a un input se le puede aplicar un estilo cuando 
+se está en el cuadro de texto; si no se añade nada a hover - simplemente se muetsra estilo cuando se pasa raton*/
+div#capa1 a.encima:hover:visited {
+    font-size: xx-large;
+}
+a:link {
+    color: #FF0000;
+}
+a:visited {
+    color: #00FF00;
+}
+a:hover {
+    color: #FF00FF;
+}
+a:active {
+    color: #0000FF;
+}
+/*a:hover debe ir depsues de a:link y a:visited para que funcione, y a:active despues de a:hover*/
+
+/*pseudoclases first: indican elementos que son primeros hijos de otros elementos*/
+/*primer elemento hijo de un padre; se puede combinar con otro elemento*/
+ul#lista li:first-child {
+    background: mediumslateblue;
+}
+p:first-child i {
+    color: blue;
+}
+/*ultimo elemento hijo de un padre*/
+ul#lista li:last-child {
+    background: mediumturquoise;
+}
+!!Todos tipos de pseudoclases: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+/*pseudoelementos: se usa para estilar primera letra, linea, insertar contenido antes o depsues de elem*/
+/* se aplica a la primera linea del parrafo; qué se puede hacer: font properties, color properties, background 
+properties, word-spacing, letter-spacing, text-decoration, vertical-align, text-transform, line-height, clear*/
+p#miparrafo::first-line {
+    font-weight: bolder;
+}
+/*primera letra dek parrafo; qué se puede hacer: font properties, color properties, background properties, 
+margin properties, padding properties, border properties, text-decoration, vertical-align (only if float is "none"),
+ text-transform, line-height, float, clear*/
+p#miparrafo::first-letter {
+    font-size: x-large;
+}
+
+/*introduce un elemnto, imagen, antes del contenido de todos h1; lo mismo con after*/
+h1::before/after {
+    content: url(smiley.gif);
+  }
+  
+/*estila marcadores de elementos de las listas*/
+::marker {
+    color: red;
+    font-size: 23px;
+}
+
+/*da estilo al texto que es seleccionado con el cursor: color, background, cursor, y outline*/
+::selection {
+    color: red;
+    background: yellow;
+}
+
+/*¿se aplica a div y todo lo que contenga dentro?*/
+div#capa1 * {
+    background: khaki;
+}
+
+/*selectores atributos: seleccionan determinadas partes de un tag*/
+/*selecciona a que tengan un target*/
+a[target] {
+    background-color: yellow;
+}
+
+/*selecciona a todos elementos name con nombre "apellido"*/
+[name~="apellido"] {
+    border: 5px solid yellow;
+}
+
+/*selecciona elementos href de a que terminan/comienzan por*/
+a[href$="http"] {
+    padding: "20px";
+}
+
+/*selecciona elementos href de a que comienzan/terminan por*/
+a[href^="es"] {
+    text-transform: capitalize;
+}
+
+/*que el enlace contenga una determinada palabra o caracteres*/
+a[href*="triana"] {
+    background: magenta;
+}
+
+/*styling forms: utiles para forms sin id o class*/
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+  }
+
+/*selecciona elementos del input que tienen focus/enabled/disabled/checked/invalid/in-range/optional/out-of-range/
+read-only/read-write/required/valid*/
+
+input:focus/enables/disabled/checked/... {
+    border: 2px solid red;
+}
+
+
+/*FLEXBOX: cssflexbox; CSSFlexboxExample; css_flexbox_weekend*/
+/*movimiento de capas*/
+.contenedor {
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-flow: row wrap;
+     justify-content: center;
+     height: 240px;
+     align-items: center;
+     align-content: stretch;
+ }
+ /* display: flex - siempre se tiene que poner en elemento grande para poder usar cualquier de los flex u otros; se pone en elemento
+ pequeño flex;
+- flex-direction indica la dirección de capas (en qué eje están): row dispone en horizont, row-revese - horizont en sentido contrario
+ column - en vertical (puedo indicar qué % de pantalla ocupa de width), y column-reverse - vertical contrario;
+- flex-wrap - intenta que todas las capas (que yo indique) ocupen una sola fila <- aquí también cuenta el border, tener cuidado con ello; 
+puede ser no-wrap (por defecto), wrap - las pone en filas (respetando el porcentaje de width y border), wrap-reverse - invierte orden 
+de filas;
+- flex-flow sirve para unir en una fila flex-direction y flex-wrap;
+- justify-content define alineacion (como se colocan las capas) a lo largo del eje x - pegado a derecha/izq/centro; se tiene que combinar 
+con flex-wrap; así flex-start me las coloca al principio (izq), flex-end al final de eje x (der), center las coloca en el centro,
+ space-between - reparte espacio en medio, space-around añade espacio en medio y a la der e izq, space-evenly coloca espacios iguales 
+ en medio y el resto reparte en los lados;
+- align-items alinea capas en la capa grande (tiene que tener una height, flex-dir y flex-wrap, puede tener justify-content); valor por 
+defecto es stretch (hace que los elementos de dentro rellenen todo el contenedor), flex-start los pone arriba, flex-end las pone abajo 
+de capa principal, center centra las capas dentro de la capa grande en el eje de la y; normalmente van a tener espacios entre ellos;
+- align-content es parecido a justify, pero lo hace en el eje y (tiene que no tener height (o puede no tenerlo?)); alinea las capas en el
+ eje y dentro de la capa grande (las pone más juntas o con espacios); flex-start las pone arribe, flex-end las pone abajo, center las 
+ pone en el centro, space-between - pone filas abajo y arriba dejando espacio enmedio, space-around añade espacio alrededor de filas en 
+ eje y, stretch hace que las capas ocupen todo el espacio en eje y */
+ 
+ .elemento {
+     width: 20%;
+     background: linear-gradient(to right, blue, grey);
+     flex-direction: row;
+     border: 1px solid black;
+     height: 40px;
+     color: white;
+     flex: 1 1 0;
+ }
+
+/*:nth-child() permite colocar determinado elemento en una posición dentro de la fila; orden impar - even, se usa con order 
+dentro de {}, y el numero que yo ponga va a indicar que se van a escoger los impares en primer lugar y por cual se empieza */
+ .elemento:nth-child(even) {
+     order: 1;
+ }
+
+/*:nth_child(numero) necesita que en .elemento (sin más) se indique antes "flex: x x x;" donde x es un numero que indican a) tamaño por 
+defecto (flex-grow) 1 es tamaño original) b) flex-basis que define tamaño por defecto antes de que se distribuyan en el espacio de toda
+ la fila (1 es tamaño original), c) flex-shrink que define capacidad de flex para situar cada una de las filas ocupando todo el espacio 
+ si es necesario (0 para que no lo haga);
+ - si indicamos en :nth-child "flex-grow: 2;", decimos que el 4º elemento ocupe el doble de espacio que los demás; o se puede indicar que
+ los pares (even) ocupen el doble, por ej */
+ .elemento:nth-child(4) {
+    flex-grow: 2;
+}
+
+!!Un ejemplo Oporto: ver CSSFlexboxExample!!
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

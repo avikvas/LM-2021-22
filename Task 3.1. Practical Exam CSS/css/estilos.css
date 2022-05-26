@@ -1,0 +1,141 @@
+/*EJERCICIO 1*/
+
+* {
+    margin: 0px;
+}
+
+body {
+    text-align: left;
+}
+
+#container {
+    padding: 5px;
+    width: 800px;
+    margin: 0px auto;
+}
+
+header, section, article {
+    display: block;
+}
+
+#head {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-style: italic;
+}
+
+span#subtit2 {
+    font-weight: bold;
+}
+
+h1, span#subtit, span#subtit2 {
+    width: 400px;
+    display: inline-block;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+article {
+    width: 350px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+article > div {
+    padding: 10px;
+}
+
+.thumb {
+    background: darkgrey;
+    padding: 30px;
+    margin: 0px;
+    border-collapse: collapse;
+    color: white;
+    font-weight: bold;
+}
+
+div.thumb > span {
+    align-items: center;
+}
+
+h5 {
+    color: blue;
+    margin: 5px;
+}
+
+#verde {
+    color: green;
+}
+
+h6 {
+    color: silver;
+}
+
+.arttit {
+    margin: 10px;
+}
+
+footer {
+    color: aqua;
+    margin-top: 5px;
+}
+
+/*EJERCICIO 2*/
+
+/*A*/
+.italic {
+    font-style: italic;
+}
+
+/*B*/
+#data {
+    background: grey;
+    color: black;
+}
+
+/*C*/
+
+div > span.multiple {
+    font-weight: bold;
+}
+
+/*D*/
+.segundo:hover {
+    background: yellow;
+}
+
+/*E*/
+.segundo::first-letter {
+    size: 50px;
+}
+
+/*F*/
+a[href$=".es"] {
+    color: red;
+}
+
+a[href$=".com"] {
+    color: skyblue;
+}
+
+/*G*/
+ul#list:hover li#li1, ul#list:hover li#li2 {
+    font-size: xx-small;
+}
+
+/*H*/
+ul#list li:first-child {
+    background: grey;
+}

@@ -1,0 +1,9 @@
+.bordeYcolor {
+    border: 2px solid blue;
+    color: green;
+    
+}
+
+p.clase::first-letter {
+    font-size: 50px;
+}

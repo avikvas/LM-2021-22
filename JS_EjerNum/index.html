@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar 2 números</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <!--homework-->
+    <!--pedir 2 numeros e indicar cual es el mayor-->
+    <div>
+        <table>
+          <tr>
+            <td><label for="n1">Introduzca el primer numero:</label></td>
+            <td><input type="num" name="n1" id="n1" autofocus></td>
+          </tr>
+          <tr>
+            <td><label for="n2">Introduzca el segundo numero:</label></td>
+            <td><input type="num" name="n2" id="n2"></td>
+          </tr>
+          <tr>
+            <td><label for="n3">Introduzca el tercer numero:</label></td>
+            <td><input type="num" name="n3" id="n3"></td>
+          </tr>
+          <tr><td><input type="button" value="Ejecutar" onclick="comparar()"></td></tr>
+        </table>
+    </div>
+    <div>
+        <span id="resultado"></span>
+  </div>
+  </br></br></br>
+  <div>
+    <table>
+        <tr>
+            <td><label for="frase">Introduzca una frase:</label></td>
+            <td><input type="text" name="frase" id="frase"></td>
+        </tr>
+        <tr>
+            <td><label for="repeat">Cuántas veces se repite:</label></td>
+            <td><input type="num" name="repeat" id="repeat"></td>
+        </tr>
+        <tr><td><input type="button" value="Repetir" onclick="repetir()"></td></tr>
+    </table>
+    <div><span id="imprimir"></span></div>
+  </div>
+</br></br></br>
+<div>
+    <table>
+      <tr>
+        <td><label for="base">Introduzca la base</label></td>
+        <td><input type="num" name="base" id="base" autofocus></td>
+      </tr>
+      <tr>
+        <td><label for="exponente">Introduzca el exponente</label></td>
+        <td><input type="num" name="exponente" id="exponente"></td>
+      </tr>
+      <tr><td><input type="button" value="Calcular" onclick="elevar()"></td></tr>
+    </table>
+</div>
+<div>
+    <span id="resu"></span>
+</div>
+</br></br></br>
+<div>
+    <table>
+      <tr>
+        <td><label for="intronum">Introduzca un número de 1 a 100</label></td>
+        <td><input type="num" name="intronum" id="intronum" autofocus></td>
+      </tr>
+      <tr><td><input type="button" value="Ejecutar" onclick="comprobar()"></td></tr>
+    </table>
+</div>
+<div>
+    <span id="respuesta"></span>
+</div>
+<div>
+    <tr><td><input type="button" id="encender" value="Jugar de nuevo" onclick="comprobar()" style="visibility: hidden;"></td></tr>
+</div>
+</body>
+</html>

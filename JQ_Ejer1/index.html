@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Ejercicios</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            //EJ 1
+            $("h1").click(function () {
+                    $("h1#title1").addClass("changeStyle");
+                    $("h1#title2").addClass("changeStyle2");
+            });
+
+            //EJ 2
+            /*$("button#ocultarLista").click(function () {
+               $("ul#list1").css("display","none"); 
+            });*/
+
+            /*$("button#ocultarLista").click(function () {
+               $("ul#list1").css("visibility","hidden"); 
+            });*/
+
+            $("button#ocultarLista").click(function () {
+               $("ul#list1 li").css("display","none"); 
+            });
+
+            //EJ 3
+            $("button#obtenerTexto").click(function () {
+                alert($("p").text());
+            });
+            
+
+            $("button#modificarTexto").click(function () {
+                $("p").text("Texto obtenido");
+            });
+
+            //$("button#modificarTd").click(function () {
+              // $("td").html("<span>Modificado</span>"); 
+            //});
+            $("button#modificarTd").click(function () {
+               $("td:eq(0)").html("<span>Modificado</span>"); 
+            });
+
+            //EJ 4
+            $("button#activeBorder").click(function () {
+                $(".activarb").css("border","1px solid black");
+            });
+
+            $("button#charBorder").click(function () {
+                //alert($(".activarb").css("border"));
+                if ($(".activarb").css("border","1px solid black")) {
+                var mostrarEstilo = $(".activarb").css("border");
+                $("#resu").text(mostrarEstilo);
+                } else if ($(".activarb").css("border"),("none")) {
+                $("#resu").text();
+                }
+            });
+
+            $("button#deleteBorder").click(function () {
+                $(".activarb").css("border","none");
+            });
+
+            //EJ5
+            $("button#ponerClase").click(function () {
+                $("div#parrafos p").addClass("ponerClass");
+            });
+
+            $("button#quitarClase").click(function () {
+                if ($("div#parrafos p").hasClass("ponerClass")) {
+                    $("div#parrafos p").removeClass("ponerClass");ñpñ
+                }
+            });
+
+            //EJ6
+            $("a").mouseover(function () {
+               $("a").css("background","lime"); 
+            });
+
+            $("a").mouseout(function () {
+               $("a").css("background","none"); 
+            });
+            
+        });
+
+        //EJ7
+        $(document).mousemove(function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        });
+
+        //EJ8
+    </script>
+    <style>
+        /*EJ 1*/
+        .changeStyle {
+            color: blueviolet;
+            background: powderblue;
+            font-family: monospace;
+        }
+
+        .changeStyle2 {
+            color: red;
+            background: darksalmon;
+            font-family: monospace;
+        }
+
+        /*EJ 5*/
+        .ponerClass {
+            color: darksalmon;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!--EJ1-->
+    <h1 id="title1">Título 1</h1>
+    </br>
+    <h1 id="title2">Título 2</h1>
+    <!--EJ2-->
+</br></br></br>
+    <div>
+        <ul id="list1">Lista 1
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ul id="list2">Lista 2
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <button id="ocultarLista">Ocultar</button>
+    </div>
+    <!--EJ3: poner 3 botones, un parrafo y unatabla-->
+</br></br></br>
+    <p>Lorem ipsum</p>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <span id="resuObtenido"></span>
+    <button id="obtenerTexto">Obtener texto</button>
+    <button id="modificarTexto">Modificar texto</button>
+    <button id="modificarTd">Modificar td</button>
+    <!--EJ4-->
+</br></br></br>
+<table class="activarb">
+    <tr class="activarb">
+        <td class="activarb">1</td>
+        <td class="activarb">2</td>
+    </tr>
+    <tr class="activarb">
+        <td class="activarb">3</td>
+        <td class="activarb">4</td>
+    </tr>
+</table>
+<span id="resu"></span></br>
+<button id="activeBorder">Mostrar Borde</button>
+<button id="charBorder">Detalles Borde</button>
+<button id="deleteBorder">Borrar Borde</button>
+    <!--EJ5-->
+</br></br></br>
+    <div id="parrafos">
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </div>
+    <button id="ponerClase">Asociar Clase</button>
+    <button id="quitarClase">Desasociar Clase</button>
+    <!--EJ6-->
+</br></br></br>
+    <div>
+        <a href="#">Link A</a>
+        <a href="#">Link B</a>
+        <a href="#">Link C</a>
+    </div>
+    <!--EJ7-->
+</br></br></br>
+    <p id="demo"></p>
+    <!--EJ8-->
+</br></br></br>
+
+    <!--EJ9-->
+    <!--EJ10-->
+    <!--EJ11-->
+    <!--EJ12-->
+    <!--EJ13-->
+    <!--EJ14-->
+    <!--EJ15-->
+    <!--EJ16-->
+    <!--EJ17-->
+    <!--EJ18-->
+
+</body>
+</html>

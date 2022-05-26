@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <div style="padding: 10px;border: 1px solid black;">
+        <h3>Tablas de Multiplicar</h3>
+        <span id="tablas" style="color: blue;"></span>
+    </div>
+    <table>
+        <tr>
+            <td><label for="num">Introduzca un numero</label></td>
+            <td><input type="number" name="num" id="num" autofocus></td>
+        </tr>
+        <tr><td><input type="button" value="Calcular" onclick="mostrarTabla(num)"></td></tr>
+        <tr><td><span id="resultado"></span></td></tr>
+    </table>
+</body>
+</html>

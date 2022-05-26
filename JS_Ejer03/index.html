@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejem Ejer 3</title>
+    <script type="text/javascript" src="js/func.js"></script>
+</head>
+<body>
+    <p>Solicita nombre y edad (en años) y muestra el resultado de los días que ha vivido suponiendo año de 
+        365 días</p>
+    <table>
+        <tr>
+            <td>
+                <label for="nombre">Nombre</label>
+            </td>
+            <td><input type="text" name="nombre" id="nombre" autofocus></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="edad">Edad</label>
+            </td>
+            <td>
+                <input type="number" name="edad" id="edad">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="naci">Fecha de nacimiento</label></td>
+            <td><input type="date" name="naci" id="naci"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" onclick="calcular()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultado"></span>
+        <span id="resultado2"></span>
+        <span id="resultado3"></span>
+    </div>
+</body>
+</html>
